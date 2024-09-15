@@ -1,0 +1,51 @@
+site_name: 'Introducción a la Inteligencia Artificial'
+nav:
+  - Curso IA: 
+    - Índice: index.md
+    - Introducción: introduction.md
+    - IA Generativa: generative-ai.md
+  - Acerca de: about.md
+theme:
+  name: material
+  # name: readthedocs
+  language: es
+  palette:
+    # scheme: slate
+    # primary: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.annotate
+    - enumerate.sections
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+extra:
+  generator: false
+plugins:
+  - mkdocs-video:
+      css_style:
+        height: "450px"
+        width: "100%"
+        is_video: True
+  - search:
+      lang: es
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys
