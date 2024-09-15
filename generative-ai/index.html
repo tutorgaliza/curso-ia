@@ -1,0 +1,1321 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../introduction/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>IA Generativa - Introducción a la Inteligencia Artificial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#inteligencia-artificial-generativa" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Introducción a la Inteligencia Artificial" class="md-header__button md-logo" aria-label="Introducción a la Inteligencia Artificial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introducción a la Inteligencia Artificial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              IA Generativa
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+  Curso IA
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about.md" class="md-tabs__link">
+        
+  
+    
+  
+  Acerca de
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Introducción a la Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Introducción a la Inteligencia Artificial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Introducción a la Inteligencia Artificial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Curso IA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Curso IA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Índice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducción
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    IA Generativa
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    IA Generativa
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-que-es-la-inteligencia-artificial-generativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ¿Qué es la Inteligencia Artificial Generativa?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-en-que-redes-se-basa-la-inteligencia-artificial-generativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ¿En qué Redes se Basa la Inteligencia Artificial Generativa?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. ¿En qué Redes se Basa la Inteligencia Artificial Generativa?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-redes-generativas-antagonicas-gans" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Redes Generativas Antagónicas (GANs)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="a. Redes Generativas Antagónicas (GANs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicaciones:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-autoencoders-variacionales-vaes" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Autoencoders Variacionales (VAEs)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="b. Autoencoders Variacionales (VAEs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicaciones_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicaciones:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-modelos-basados-en-transformadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Modelos Basados en Transformadores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="c. Modelos Basados en Transformadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-modelos-de-difusion-diffusion-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. Modelos de Difusión (Diffusion Models)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="d. Modelos de Difusión (Diffusion Models)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicaciones_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicaciones:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-flujos-normales-normalizing-flows" class="md-nav__link">
+    <span class="md-ellipsis">
+      e. Flujos Normales (Normalizing Flows)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="e. Flujos Normales (Normalizing Flows)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicaciones_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicaciones:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-redes-recurrentes-y-lstm-long-short-term-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      f. Redes Recurrentes y LSTM (Long Short-Term Memory)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="f. Redes Recurrentes y LSTM (Long Short-Term Memory)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicaciones_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicaciones:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-comparacion-de-las-redes-neuronales-en-la-ia-generativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Comparación de las Redes Neuronales en la IA Generativa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-importancia-y-futuro-de-la-inteligencia-artificial-generativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Importancia y Futuro de la Inteligencia Artificial Generativa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acerca de
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-que-es-la-inteligencia-artificial-generativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ¿Qué es la Inteligencia Artificial Generativa?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-en-que-redes-se-basa-la-inteligencia-artificial-generativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ¿En qué Redes se Basa la Inteligencia Artificial Generativa?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. ¿En qué Redes se Basa la Inteligencia Artificial Generativa?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-redes-generativas-antagonicas-gans" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Redes Generativas Antagónicas (GANs)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="a. Redes Generativas Antagónicas (GANs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicaciones:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-autoencoders-variacionales-vaes" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Autoencoders Variacionales (VAEs)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="b. Autoencoders Variacionales (VAEs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicaciones_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicaciones:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-modelos-basados-en-transformadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Modelos Basados en Transformadores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="c. Modelos Basados en Transformadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-modelos-de-difusion-diffusion-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. Modelos de Difusión (Diffusion Models)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="d. Modelos de Difusión (Diffusion Models)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicaciones_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicaciones:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-flujos-normales-normalizing-flows" class="md-nav__link">
+    <span class="md-ellipsis">
+      e. Flujos Normales (Normalizing Flows)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="e. Flujos Normales (Normalizing Flows)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicaciones_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicaciones:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-redes-recurrentes-y-lstm-long-short-term-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      f. Redes Recurrentes y LSTM (Long Short-Term Memory)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="f. Redes Recurrentes y LSTM (Long Short-Term Memory)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionamiento_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicaciones_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicaciones:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-comparacion-de-las-redes-neuronales-en-la-ia-generativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Comparación de las Redes Neuronales en la IA Generativa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-importancia-y-futuro-de-la-inteligencia-artificial-generativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Importancia y Futuro de la Inteligencia Artificial Generativa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="inteligencia-artificial-generativa"><strong>Inteligencia Artificial Generativa</strong></h1>
+<hr />
+<h2 id="1-que-es-la-inteligencia-artificial-generativa"><strong>1. ¿Qué es la Inteligencia Artificial Generativa?</strong></h2>
+<p>La <strong>Inteligencia Artificial Generativa</strong> (IAG) es una rama de la inteligencia artificial enfocada en la creación de contenido nuevo y original, como texto, imágenes, audio, video, y código, que imita los datos con los que ha sido entrenada pero sin replicarlos exactamente. A diferencia de los modelos discriminativos, que se centran en clasificar o predecir basándose en datos existentes, los modelos generativos aprenden la <strong>distribución subyacente</strong> de los datos para generar nuevas muestras que son coherentes y realistas.</p>
+<p><strong>Aplicaciones de la IA Generativa:</strong></p>
+<ul>
+<li><strong>Generación de Texto:</strong> Modelos como <strong>GPT-3</strong> y <strong>GPT-4</strong> pueden redactar artículos, historias, poesía, código y mantener conversaciones coherentes.</li>
+<li><strong>Creación de Imágenes:</strong> Herramientas como <strong>DALL·E</strong>, <strong>Midjourney</strong> y <strong>Stable Diffusion</strong> generan imágenes a partir de descripciones textuales.</li>
+<li><strong>Música y Audio:</strong> Composición de piezas musicales originales o voces sintéticas.</li>
+<li><strong>Video y Animaciones:</strong> Creación de videos o animaciones basadas en entradas textuales o de otro tipo.</li>
+<li><strong>Modelado 3D y Diseño Gráfico:</strong> Generación de modelos tridimensionales y diseños innovadores.</li>
+<li><strong>Desarrollo de Videojuegos:</strong> Creación de entornos, personajes y narrativas de manera automatizada.</li>
+<li><strong>Medicina y Ciencias:</strong> Generación de datos sintéticos para investigación, simulaciones y modelado molecular.</li>
+</ul>
+<hr />
+<h2 id="2-en-que-redes-se-basa-la-inteligencia-artificial-generativa"><strong>2. ¿En qué Redes se Basa la Inteligencia Artificial Generativa?</strong></h2>
+<p>La IA Generativa se apoya en diversas <strong>arquitecturas de redes neuronales profundas</strong>. A continuación, se describen las más destacadas:</p>
+<h3 id="a-redes-generativas-antagonicas-gans"><strong>a. Redes Generativas Antagónicas (GANs)</strong></h3>
+<h4 id="introduccion"><strong>Introducción:</strong></h4>
+<p>Propuestas por <strong>Ian Goodfellow</strong> en 2014, las <strong>Generative Adversarial Networks (GANs)</strong> consisten en dos redes neuronales que compiten entre sí: un <strong>Generador</strong> y un <strong>Discriminador</strong>.</p>
+<h4 id="funcionamiento"><strong>Funcionamiento:</strong></h4>
+<ul>
+<li><strong>Generador:</strong> Crea datos sintéticos (por ejemplo, imágenes) a partir de ruido aleatorio, intentando que parezcan lo más reales posible.</li>
+<li><strong>Discriminador:</strong> Evalúa si los datos que recibe son reales (provenientes del conjunto de datos de entrenamiento) o generados por el generador.</li>
+<li><strong>Entrenamiento:</strong> Ambas redes se entrenan simultáneamente en un proceso de competencia, mejorando continuamente hasta que el generador produce datos que el discriminador no puede distinguir de los reales.</li>
+</ul>
+<h4 id="aplicaciones"><strong>Aplicaciones:</strong></h4>
+<ul>
+<li><strong>Generación de Imágenes Fotorrealistas:</strong> Creación de rostros humanos, paisajes, objetos, etc.</li>
+<li><strong>Transferencia de Estilo:</strong> Aplicar el estilo de una imagen a otra (por ejemplo, convertir una foto en una pintura al estilo de Van Gogh).</li>
+<li><strong>Superresolución:</strong> Mejorar la calidad y resolución de imágenes de baja calidad.</li>
+<li><strong>Aumento de Datos:</strong> Generar datos adicionales para entrenar otros modelos de IA.</li>
+</ul>
+<h3 id="b-autoencoders-variacionales-vaes"><strong>b. Autoencoders Variacionales (VAEs)</strong></h3>
+<h4 id="introduccion_1"><strong>Introducción:</strong></h4>
+<p>Los <strong>Variational Autoencoders (VAEs)</strong> son modelos generativos probabilísticos que aprenden representaciones latentes de los datos.</p>
+<h4 id="funcionamiento_1"><strong>Funcionamiento:</strong></h4>
+<ul>
+<li><strong>Codificador:</strong> Comprime los datos de entrada en una representación latente de menor dimensión.</li>
+<li><strong>Decodificador:</strong> Reconstruye los datos originales a partir de la representación latente.</li>
+<li><strong>Variacional:</strong> Introduce una componente probabilística que permite generar nuevas muestras al muestrear del espacio latente.</li>
+</ul>
+<h4 id="aplicaciones_1"><strong>Aplicaciones:</strong></h4>
+<ul>
+<li><strong>Generación de Imágenes y Videos:</strong> Creación de variaciones realistas de los datos de entrenamiento.</li>
+<li><strong>Interpolación entre Muestras:</strong> Generar transiciones suaves entre diferentes ejemplos de datos.</li>
+<li><strong>Compresión de Datos:</strong> Reducir la dimensionalidad de los datos para almacenamiento o transmisión eficiente.</li>
+</ul>
+<h3 id="c-modelos-basados-en-transformadores"><strong>c. Modelos Basados en Transformadores</strong></h3>
+<h4 id="introduccion_2"><strong>Introducción:</strong></h4>
+<p>Los <strong>transformadores</strong>, presentados en 2017, han revolucionado el procesamiento del lenguaje natural y, más recientemente, la generación de imágenes y otros contenidos.</p>
+<h4 id="funcionamiento_2"><strong>Funcionamiento:</strong></h4>
+<ul>
+<li>Utilizan mecanismos de <strong>atención</strong> (self-attention) para procesar secuencias de datos, capturando dependencias a largo plazo.</li>
+<li>Pueden manejar grandes cantidades de datos y contextos extensos de manera eficiente.</li>
+</ul>
+<h4 id="ejemplos"><strong>Ejemplos:</strong></h4>
+<ul>
+<li><strong>GPT (Generative Pre-trained Transformer):</strong> Modelos como <strong>GPT-3</strong> y <strong>GPT-4</strong> generan texto coherente y contextualizado.</li>
+<li><strong>DALL·E:</strong> Genera imágenes a partir de descripciones textuales utilizando una adaptación de transformadores para imágenes.</li>
+<li>
+<p><strong>BERT (Bidirectional Encoder Representations from Transformers):</strong> Aunque principalmente utilizado para tareas de comprensión, puede adaptarse para generación de texto.</p>
+</li>
+<li>
+<p><strong>Aplicaciones:</strong></p>
+</li>
+<li><strong>Generación y Resumen de Texto.</strong></li>
+<li><strong>Traducción Automática.</strong></li>
+<li><strong>Generación de Código.</strong></li>
+<li><strong>Creación de Imágenes y Arte Digital.</strong></li>
+<li><strong>Chatbots y Asistentes Virtuales.</strong></li>
+</ul>
+<h3 id="d-modelos-de-difusion-diffusion-models"><strong>d. Modelos de Difusión (Diffusion Models)</strong></h3>
+<h4 id="introduccion_3"><strong>Introducción:</strong></h4>
+<p>Los <strong>Modelos de Difusión</strong> son una clase de modelos generativos que han ganado popularidad por su capacidad para generar contenido de alta calidad mediante procesos probabilísticos.</p>
+<h4 id="funcionamiento_3"><strong>Funcionamiento:</strong></h4>
+<ul>
+<li><strong>Proceso de Difusión Directa:</strong> Añade ruido gaussiano a los datos en múltiples pasos hasta obtener una distribución ruidosa.</li>
+<li><strong>Proceso de Difusión Inversa:</strong> El modelo aprende a revertir este proceso, eliminando el ruido gradualmente para generar nuevos datos a partir del ruido puro.</li>
+</ul>
+<h4 id="ejemplos_1"><strong>Ejemplos:</strong></h4>
+<ul>
+<li><strong>DALL·E 2:</strong> Utiliza modelos de difusión para mejorar la generación de imágenes.</li>
+<li><strong>Stable Diffusion:</strong> Modelo de código abierto que genera imágenes a partir de texto utilizando difusión.</li>
+<li><strong>Imagen</strong> de Google: Un sistema que genera imágenes fotorrealistas a partir de descripciones en lenguaje natural.</li>
+</ul>
+<h4 id="aplicaciones_2"><strong>Aplicaciones:</strong></h4>
+<ul>
+<li><strong>Generación de Imágenes de Alta Fidelidad.</strong></li>
+<li><strong>Síntesis de Audio y Video.</strong></li>
+<li><strong>Mejoramiento y Restauración de Imágenes.</strong></li>
+<li><strong>Generación de Contenido Creativo para Medios y Entretenimiento.</strong></li>
+</ul>
+<h3 id="e-flujos-normales-normalizing-flows"><strong>e. Flujos Normales (Normalizing Flows)</strong></h3>
+<h4 id="introduccion_4"><strong>Introducción:</strong></h4>
+<p>Los <strong>Flujos Normales</strong> son modelos generativos que transforman una distribución simple (como una distribución gaussiana) en una distribución compleja mediante una serie de funciones invertibles y diferenciables.</p>
+<h4 id="funcionamiento_4"><strong>Funcionamiento:</strong></h4>
+<ul>
+<li>Aplican una serie de transformaciones matemáticas invertibles a los datos de entrada para modelar distribuciones más complejas.</li>
+<li>Permiten calcular directamente la densidad de probabilidad de los datos generados, lo que facilita el entrenamiento y la generación de muestras.</li>
+</ul>
+<h4 id="aplicaciones_3"><strong>Aplicaciones:</strong></h4>
+<ul>
+<li><strong>Modelado de Densidad Probabilística.</strong></li>
+<li><strong>Generación de Datos Sintéticos en Diversas Dimensiones.</strong></li>
+<li><strong>Compresión de Datos.</strong></li>
+<li><strong>Análisis de Datos Multivariantes Complejos.</strong></li>
+</ul>
+<h3 id="f-redes-recurrentes-y-lstm-long-short-term-memory"><strong>f. Redes Recurrentes y LSTM (Long Short-Term Memory)</strong></h3>
+<h4 id="introduccion_5"><strong>Introducción:</strong></h4>
+<p>Antes del auge de los transformadores, las <strong>Redes Neuronales Recurrentes (RNN)</strong> y las <strong>Unidades de Memoria a Largo Plazo (LSTM)</strong> eran comunes para tareas secuenciales y de generación de contenido.</p>
+<h4 id="funcionamiento_5"><strong>Funcionamiento:</strong></h4>
+<ul>
+<li>Capturan dependencias temporales en secuencias de datos, como texto o música.</li>
+<li>Procesan datos de manera secuencial, manteniendo un estado interno que refleja información histórica.</li>
+</ul>
+<h4 id="aplicaciones_4"><strong>Aplicaciones:</strong></h4>
+<ul>
+<li><strong>Generación de Texto y Poesía.</strong></li>
+<li><strong>Composición Musical.</strong></li>
+<li><strong>Síntesis de Voz.</strong></li>
+<li><strong>Modelado de Series Temporales.</strong></li>
+</ul>
+<hr />
+<h2 id="3-comparacion-de-las-redes-neuronales-en-la-ia-generativa"><strong>3. Comparación de las Redes Neuronales en la IA Generativa</strong></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Tipo de Red</strong></th>
+<th><strong>Ventajas</strong></th>
+<th><strong>Desventajas</strong></th>
+<th><strong>Aplicaciones Comunes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GANs</strong></td>
+<td>Generación de imágenes altamente realistas.</td>
+<td>Entrenamiento inestable; riesgo de colapso del modo.</td>
+<td>Arte digital, superresolución, generación de rostros humanos.</td>
+</tr>
+<tr>
+<td><strong>VAEs</strong></td>
+<td>Capacidad para aprender representaciones latentes; generación de datos más variadas.</td>
+<td>Calidad de las imágenes generadas inferior a GANs.</td>
+<td>Compresión de datos, generación de variaciones de datos.</td>
+</tr>
+<tr>
+<td><strong>Transformers</strong></td>
+<td>Manejo eficiente de largas dependencias; escalabilidad.</td>
+<td>Requieren grandes cantidades de datos y recursos computacionales.</td>
+<td>Generación de texto, traducción automática, generación de código.</td>
+</tr>
+<tr>
+<td><strong>Modelos de Difusión</strong></td>
+<td>Alta calidad y fidelidad en la generación de imágenes.</td>
+<td>Proceso de generación más lento debido a múltiples pasos de denoising.</td>
+<td>Generación de imágenes fotorrealistas, síntesis de audio.</td>
+</tr>
+<tr>
+<td><strong>Flujos Normales</strong></td>
+<td>Permiten cálculo directo de la densidad de probabilidad.</td>
+<td>Complejidad en el diseño de funciones de transformación.</td>
+<td>Modelado de densidad, generación de datos sintéticos.</td>
+</tr>
+<tr>
+<td><strong>RNN y LSTM</strong></td>
+<td>Eficaces para datos secuenciales; capturan dependencias temporales.</td>
+<td>Dificultad para manejar dependencias a largo plazo; menos eficientes que los transformadores.</td>
+<td>Generación de texto y música, síntesis de voz.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-importancia-y-futuro-de-la-inteligencia-artificial-generativa"><strong>4. Importancia y Futuro de la Inteligencia Artificial Generativa</strong></h2>
+<p>La <strong>Inteligencia Artificial Generativa</strong> está transformando múltiples industrias al permitir la creación automatizada de contenido creativo y funcional. Sus aplicaciones abarcan desde el arte y el entretenimiento hasta la medicina y la ingeniería, facilitando innovaciones que antes eran impensables.</p>
+<p><strong>Beneficios:</strong></p>
+<ul>
+<li><strong>Creatividad Aumentada:</strong> Ayuda a artistas y creadores a explorar nuevas ideas y estilos.</li>
+<li><strong>Eficiencia en el Desarrollo de Contenido:</strong> Automatiza tareas repetitivas, permitiendo un enfoque en aspectos más creativos y estratégicos.</li>
+<li><strong>Personalización:</strong> Permite la creación de contenido adaptado a las preferencias individuales de los usuarios.</li>
+<li><strong>Accesibilidad:</strong> Facilita el acceso a herramientas creativas avanzadas para personas sin formación técnica.</li>
+</ul>
+<p><strong>Desafíos y Consideraciones Éticas:</strong></p>
+<ul>
+<li><strong>Propiedad Intelectual:</strong> Determinar la titularidad del contenido generado por IA.</li>
+<li><strong>Autenticidad y Manipulación:</strong> Riesgos de generar contenido falso o engañoso.</li>
+<li><strong>Bias y Representación:</strong> Asegurar que los modelos generativos no perpetúen sesgos presentes en los datos de entrenamiento.</li>
+<li><strong>Uso Responsable:</strong> Establecer regulaciones y guías para el uso ético de la IA generativa.</li>
+</ul>
+<p><strong>Futuro:</strong></p>
+<p>Se espera que la IA Generativa continúe evolucionando, mejorando la calidad y diversidad del contenido generado. La integración con otras tecnologías emergentes, como la realidad aumentada (AR) y la realidad virtual (VR), potenciará aún más sus aplicaciones, creando experiencias más inmersivas y personalizadas.</p>
+<hr />
+<h2 id="conclusion"><strong>Conclusión</strong></h2>
+<p>La <strong>Inteligencia Artificial Generativa</strong> representa una de las áreas más dinámicas y prometedoras de la inteligencia artificial moderna. Al basarse en arquitecturas avanzadas de redes neuronales como <strong>GANs</strong>, <strong>VAEs</strong>, <strong>Transformers</strong>, y <strong>Modelos de Difusión</strong>, permite la creación de contenido innovador y realista que tiene el potencial de revolucionar múltiples sectores. Sin embargo, es crucial abordar los desafíos éticos y técnicos asociados para garantizar un desarrollo y uso responsable de esta tecnología.</p>
+<hr />
+<p><strong>Si tienes más preguntas o deseas profundizar en algún aspecto específico de la Inteligencia Artificial Generativa, ¡no dudes en consultarme!</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "content.code.annotate"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
